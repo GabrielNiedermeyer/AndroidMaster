@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidMaster</string>
+    <string name="ic_male">MAN</string>
+    <string name="ic_female">WOMAN</string>
 </resources>
