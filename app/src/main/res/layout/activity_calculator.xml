@@ -172,13 +172,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     app:backgroundTint="@color/purple_500"
+                    android:src="@drawable/ic_minus"
+                    app:tint="@color/white"
                     />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btPlusWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:backgroundTint="@color/purple_500"/>
+                    app:backgroundTint="@color/purple_500"
+                    android:src="@drawable/ic_plus"
+                    app:tint="@color/white"
+                    />
             </LinearLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
