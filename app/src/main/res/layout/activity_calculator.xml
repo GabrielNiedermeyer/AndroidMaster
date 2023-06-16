@@ -120,7 +120,8 @@
                 android:layout_height="wrap_content"
                 android:stepSize="1"
                 android:valueFrom="120"
-                android:valueTo="250" />
+                android:valueTo="250"
+                />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -174,7 +175,7 @@
                     app:backgroundTint="@color/purple_500"
                     android:src="@drawable/ic_minus"
                     app:tint="@color/white"
-                    />
+                    android:contentDescription="TODO" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btPlusWeight"
@@ -183,7 +184,7 @@
                     app:backgroundTint="@color/purple_500"
                     android:src="@drawable/ic_plus"
                     app:tint="@color/white"
-                    />
+                    android:contentDescription="TODO" />
             </LinearLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
