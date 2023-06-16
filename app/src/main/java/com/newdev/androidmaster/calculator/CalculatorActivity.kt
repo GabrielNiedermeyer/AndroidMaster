@@ -14,6 +14,7 @@ import java.text.DecimalFormat
 private var isMaleSelected:Boolean =  true
 private var isFemaleSelected:Boolean = false
 private var currentWeight: Int = 60
+private var currentAge: Int = 30
 
 
 private lateinit var viewMale: CardView
@@ -23,6 +24,9 @@ private lateinit var rsHeight: RangeSlider
 private lateinit var btSubtractWeight: FloatingActionButton
 private lateinit var btPlusWeight: FloatingActionButton
 private lateinit var tvWeight: TextView
+private lateinit var btSubtractAge: FloatingActionButton
+private lateinit var btPlusAge: FloatingActionButton
+private lateinit var tvAge: TextView
 
 class CalculatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +40,7 @@ class CalculatorActivity : AppCompatActivity() {
     private fun unitUI() {
         setGenderColor()
         setWeight()
+        setAge()
     }
 
     private fun initComponents(){
@@ -46,6 +51,9 @@ class CalculatorActivity : AppCompatActivity() {
         btSubtractWeight=findViewById(R.id.btSubtractWeight)
         btPlusWeight=findViewById(R.id.btPlusWeight)
         tvWeight=findViewById(R.id.tvWeight)
+        btSubtractAge=findViewById(R.id.btSubtractAge)
+        btPlusAge=findViewById(R.id.btPlusAge)
+        tvAge=findViewById(R.id.tvAge)
     }
 
     private fun unitListener() {
@@ -70,10 +78,21 @@ class CalculatorActivity : AppCompatActivity() {
             currentWeight += 1
             setWeight()
         }
+        btSubtractAge.setOnClickListener {
+            currentAge -= 1
+            setAge()
+        }
+        btPlusAge.setOnClickListener {
+            currentAge += 1
+            setAge()
+        }
     }
         private fun setWeight(){
             tvWeight.text= currentWeight.toString()
         }
+         private fun setAge(){
+            tvAge.text= currentAge.toString()
+    }
 
     private fun changeGender(){
         isMaleSelected = !isMaleSelected
