@@ -5,4 +5,5 @@
     <string name="ic_height">HEIGHT</string>
     <string name="ic_weight">WEIGHT</string>
     <string name="ic_age">AGE</string>
+    <string name="btn_calculate">CALCULAR</string>
 </resources>

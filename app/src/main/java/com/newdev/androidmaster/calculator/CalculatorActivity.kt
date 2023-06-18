@@ -1,8 +1,11 @@
 package com.newdev.androidmaster.calculator
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
@@ -14,6 +17,7 @@ import java.text.DecimalFormat
 private var isMaleSelected:Boolean =  true
 private var isFemaleSelected:Boolean = false
 private var currentWeight: Int = 60
+private var currentHeight: Int = 120
 private var currentAge: Int = 30
 
 
@@ -27,6 +31,8 @@ private lateinit var tvWeight: TextView
 private lateinit var btSubtractAge: FloatingActionButton
 private lateinit var btPlusAge: FloatingActionButton
 private lateinit var tvAge: TextView
+private lateinit var btnCalculate: Button
+
 
 class CalculatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,6 +60,7 @@ class CalculatorActivity : AppCompatActivity() {
         btSubtractAge=findViewById(R.id.btSubtractAge)
         btPlusAge=findViewById(R.id.btPlusAge)
         tvAge=findViewById(R.id.tvAge)
+        btnCalculate=findViewById(R.id.btnCalculate)
     }
 
     private fun unitListener() {
@@ -67,8 +74,8 @@ class CalculatorActivity : AppCompatActivity() {
         }
         rsHeight.addOnChangeListener { _, value, _ ->
             val df = DecimalFormat("#.##")
-            val result = df.format(value)
-            tvHeight.text = "$result cm"
+            currentHeight = df.format(value).toInt()
+            tvHeight.text = " $currentHeight cm"
         }
         btSubtractWeight.setOnClickListener {
             currentWeight -= 1
@@ -86,8 +93,27 @@ class CalculatorActivity : AppCompatActivity() {
             currentAge += 1
             setAge()
         }
+        btnCalculate.setOnClickListener {
+            val result= calculateIMC()
+            navegateToResult(result)
+        }
     }
-        private fun setWeight(){
+
+    private fun navegateToResult(result: Double) {
+        val intent = Intent(this, ResultActivity::class.java)
+        intent.putExtra("IMC_RESULT", result)
+        startActivity(intent)
+
+
+    }
+
+    private fun calculateIMC():Double {
+        val df = DecimalFormat("#,##")
+        val imc = currentWeight / (currentHeight.toDouble()/100 * currentHeight.toDouble()/100)
+        return df.format(imc).toDouble()
+    }
+
+    private fun setWeight(){
             tvWeight.text= currentWeight.toString()
         }
          private fun setAge(){
