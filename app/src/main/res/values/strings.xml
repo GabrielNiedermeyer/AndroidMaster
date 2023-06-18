@@ -6,4 +6,6 @@
     <string name="ic_weight">WEIGHT</string>
     <string name="ic_age">AGE</string>
     <string name="btn_calculate">CALCULAR</string>
+    <string name="result"> YOUR RESULT</string>
+    <string name="btn_recalculate">RE-CALCULATE</string>
 </resources>
