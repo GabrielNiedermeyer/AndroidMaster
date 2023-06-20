@@ -8,4 +8,20 @@
     <string name="btn_calculate">CALCULAR</string>
     <string name="result"> YOUR RESULT</string>
     <string name="btn_recalculate">RE-CALCULATE</string>
+    <string name="msg_erro">ERRO</string>
+
+    <string name="title_less">Less weight</string>
+    <string name="description_less">You are so slim</string>
+
+    <string name="title_normal">Normal weight</string>
+    <string name="description_normal">You are Ok</string>
+
+    <string name="title_more">More weight</string>
+    <string name="description_more">You are so fat</string>
+
+    <string name="title_obesidad">Obesidad</string>
+    <string name="description_obesidade">Go to the Gym nowwww</string>
+
+
+
 </resources>

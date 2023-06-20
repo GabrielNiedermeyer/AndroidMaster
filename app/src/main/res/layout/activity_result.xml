@@ -22,7 +22,50 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/background_component"
+        android:layout_marginVertical="32dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnReCalculate"
+        app:layout_constraintTop_toBottomOf="@id/tv_Title">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Normal"
+                android:textStyle="bold"
+                android:textSize="26sp"/>
+
+            <TextView
+                android:id="@+id/tvIMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Normal"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="70sp"
+                android:layout_marginVertical="64dp"/>
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Normal"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="26sp"/>
+
+        </LinearLayout>
+
 
     </androidx.cardview.widget.CardView>
 
