@@ -118,10 +118,10 @@
                 android:id="@+id/rsHeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:stepSize="1"
                 android:valueFrom="120"
-                android:valueTo="250"
-                />
+                android:valueTo="250" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -172,7 +172,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    app:backgroundTint="@color/purple_500"
+                    app:backgroundTint="@color/obesidad"
                     android:src="@drawable/ic_minus"
                     app:tint="@color/white"
                     android:contentDescription="TODO" />
@@ -181,7 +181,7 @@
                     android:id="@+id/btPlusWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:backgroundTint="@color/purple_500"
+                    app:backgroundTint="@color/obesidad"
                     android:src="@drawable/ic_plus"
                     app:tint="@color/white"
                     android:contentDescription="TODO" />
@@ -234,7 +234,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    app:backgroundTint="@color/purple_500"
+                    app:backgroundTint="@color/obesidad"
                     android:src="@drawable/ic_minus"
                     app:tint="@color/white"
                     android:contentDescription="TODO" />
@@ -243,7 +243,7 @@
                     android:id="@+id/btPlusAge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:backgroundTint="@color/purple_500"
+                    app:backgroundTint="@color/obesidad"
                     android:src="@drawable/ic_plus"
                     app:tint="@color/white"
                     android:contentDescription="TODO" />
@@ -254,12 +254,15 @@
     </androidx.cardview.widget.CardView>
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCalculate"
+        android:textSize="20dp"
+        android:textStyle="bold"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:text="@string/btn_calculate"
         android:layout_marginTop="16dp"
+        android:background="@color/obesidad"
         app:layout_constraintTop_toBottomOf="@id/ViewAge"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

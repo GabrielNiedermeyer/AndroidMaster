@@ -109,7 +109,6 @@ class CalculatorActivity : AppCompatActivity() {
         intent.putExtra(IMC_KEY, result)
         startActivity(intent)
 
-
     }
 
     private fun calculateIMC():Double {
