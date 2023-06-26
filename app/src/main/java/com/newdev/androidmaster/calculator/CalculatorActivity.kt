@@ -4,7 +4,6 @@ package com.newdev.androidmaster.calculator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
@@ -38,7 +37,7 @@ private lateinit var btnCalculate: Button
 class CalculatorActivity : AppCompatActivity() {
 
     companion object{
-        const val IMC_KEY = "IMC_RESULT"
+        const val BMI_KEY = "BMI_RESULT"
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -106,7 +105,7 @@ class CalculatorActivity : AppCompatActivity() {
 
     private fun navegateToResult(result: Double) {
         val intent = Intent(this, ResultActivity::class.java)
-        intent.putExtra(IMC_KEY, result)
+        intent.putExtra(BMI_KEY, result)
         startActivity(intent)
 
     }
