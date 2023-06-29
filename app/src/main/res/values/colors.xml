@@ -15,6 +15,10 @@
     <color name="title_text">#FF8D8E98</color>
 
 
+    <color name="slider_thumb">#EB1555</color>
+    <color name="slider_track">#D1C4CA</color>
+
+
     <color name="under_weight">#FFEB3B</color>
     <color name="normal_weight">#4CAF50</color>
     <color name="overweight">#FF9800</color>

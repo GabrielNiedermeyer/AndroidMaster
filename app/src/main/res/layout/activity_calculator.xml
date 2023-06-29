@@ -118,10 +118,12 @@
                 android:id="@+id/rsHeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:stepSize="1"
                 android:valueFrom="120"
-                android:valueTo="250" />
+                android:valueTo="250"
+                app:thumbColor="@color/slider_thumb"
+                app:trackColor="@color/slider_track"
+                />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
