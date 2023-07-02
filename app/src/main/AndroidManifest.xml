@@ -14,11 +14,9 @@
         <activity
             android:name=".calculator.ResultActivity"
             android:exported="false" />
+
         <activity
             android:name=".calculator.CalculatorActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

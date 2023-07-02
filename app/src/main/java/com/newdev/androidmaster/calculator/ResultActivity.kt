@@ -8,11 +8,11 @@ import androidx.core.content.ContextCompat
 import com.newdev.androidmaster.R
 import com.newdev.androidmaster.calculator.CalculatorActivity.Companion.BMI_KEY
 
-class ResultActivity : AppCompatActivity() {
+class  ResultActivity : AppCompatActivity() {
 
     private lateinit var tvResult: TextView
     private lateinit var tvBMI: TextView
-    private lateinit var tvDescreption: TextView
+    private lateinit var tvDescription: TextView
     private lateinit var btnRecalculate: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,31 +37,31 @@ class ResultActivity : AppCompatActivity() {
 
                 tvResult.text = getString(R.string.title_under_weight)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.under_weight))
-                tvDescreption.text = getString(R.string.description_under_weight)
+                tvDescription.text = getString(R.string.description_under_weight)
 
             }
             in 18.51..24.99 -> {  //normal
 
                 tvResult.text = getString(R.string.title_normal)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.normal_weight))
-                tvDescreption.text = getString(R.string.description_normal)
+                tvDescription.text = getString(R.string.description_normal)
             }
             in 25.00..29.99 -> {  //more
 
                 tvResult.text = getString(R.string.title_overweight)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.overweight))
-                tvDescreption.text = getString(R.string.description_overweight)
+                tvDescription.text = getString(R.string.description_overweight)
             }
             in 30.00..99.99 -> {  //besidad
 
                 tvResult.text = getString(R.string.title_obesity)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.obesity))
-                tvDescreption.text = getString(R.string.description_obesity)
+                tvDescription.text = getString(R.string.description_obesity)
             }
             else -> { //erro
                 tvBMI.text = getString(R.string.msg_erro)
                 tvResult.text = getString(R.string.msg_erro)
-                tvDescreption.text = getString(R.string.msg_erro)
+                tvDescription.text = getString(R.string.msg_erro)
             }
         }
 
@@ -70,7 +70,7 @@ class ResultActivity : AppCompatActivity() {
     private fun initComponents() {
         tvResult = findViewById(R.id.tvResult)
         tvBMI = findViewById(R.id.tvbmi)
-        tvDescreption = findViewById(R.id.tvDescription)
+        tvDescription = findViewById(R.id.tvDescription)
         btnRecalculate = findViewById(R.id.btnReCalculate)
 
     }

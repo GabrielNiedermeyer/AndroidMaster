@@ -36,6 +36,7 @@ private lateinit var btnCalculate: Button
 
 class CalculatorActivity : AppCompatActivity() {
 
+
     companion object{
         const val BMI_KEY = "BMI_RESULT"
     }

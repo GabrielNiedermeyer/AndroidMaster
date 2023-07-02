@@ -12,7 +12,6 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/ViewMan"
-        android:layout_marginTop="80dp"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginEnd="16dp"
@@ -51,12 +50,11 @@
         android:id="@+id/ViewFemale"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:layout_marginTop="80dp"
-        app:layout_constraintStart_toEndOf="@+id/ViewMan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:cardBackgroundColor="@color/background_component"
-        app:cardCornerRadius="16dp">
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ViewMan"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -67,15 +65,15 @@
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/ic_female"
                 android:layout_marginBottom="8dp"
-                app:tint="@color/white"/>
+                android:src="@drawable/ic_female"
+                app:tint="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ic_female"
-                android:textColor="@color/title_text"/>
+                android:textColor="@color/title_text" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -164,7 +162,7 @@
             android:textColor="@color/white"
             android:textSize="38sp"
             android:textStyle="bold" />
-            
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -260,18 +258,20 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCalculate"
-        android:textSize="20dp"
-        android:textStyle="bold"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:text="@string/btn_calculate"
         android:layout_marginTop="16dp"
-        android:textColor="@color/white"
         android:background="@color/background_button"
-        app:layout_constraintTop_toBottomOf="@id/ViewAge"
+        android:text="@string/btn_calculate"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ViewAge"
+        app:layout_constraintVertical_bias="0.357" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
