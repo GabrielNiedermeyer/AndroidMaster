@@ -80,7 +80,7 @@
         android:layout_height="80dp"
         android:text="@string/btn_recalculate"
         android:layout_marginTop="16dp"
-        android:background="@color/obesity"
+        android:background="@color/background_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

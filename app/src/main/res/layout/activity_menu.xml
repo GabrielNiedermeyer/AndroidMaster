@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:layout_margin="16dp"
     android:orientation="vertical"
-    tools:context=".MenuActivity">
+    tools:context=".MenuActivity"
+    app:background="@color/background_app">
     
     <Button
         android:id="@+id/btn"
