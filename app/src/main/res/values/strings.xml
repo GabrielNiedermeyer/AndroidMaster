@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidMaster</string>
+    <string name="app_name">BMI_CALCULATOR</string>
     <string name="ic_male">MAN</string>
     <string name="ic_female">WOMAN</string>
     <string name="ic_height">HEIGHT</string>
@@ -8,7 +8,7 @@
     <string name="btn_calculate">CALCULATE</string>
     <string name="result"> YOUR RESULT</string>
     <string name="btn_recalculate">RE-CALCULATE</string>
-    <string name="msg_erro">ERRO</string>
+    <string name="msg_error">ERROR</string>
 
     <string name="title_under_weight">Under weight</string>
     <string name="description_under_weight">Your weight is below the recommended!</string>

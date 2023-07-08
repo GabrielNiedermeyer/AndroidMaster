@@ -59,9 +59,9 @@ class  ResultActivity : AppCompatActivity() {
                 tvDescription.text = getString(R.string.description_obesity)
             }
             else -> { //erro
-                tvBMI.text = getString(R.string.msg_erro)
-                tvResult.text = getString(R.string.msg_erro)
-                tvDescription.text = getString(R.string.msg_erro)
+                tvBMI.text = getString(R.string.msg_error)
+                tvResult.text = getString(R.string.msg_error)
+                tvDescription.text = getString(R.string.msg_error)
             }
         }
 
