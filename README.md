@@ -1,4 +1,5 @@
-# BMI_Calculator
+# BMI CCALCULATOR
+
 BMI Calculator was an app I developed to improve my knowledge so far as an Android developer.
 
 
@@ -10,20 +11,23 @@ BMI Calculator was an app I developed to improve my knowledge so far as an Andro
 * Kotlin
 * Activity for screen host
 * ViewGroup
-    * RelativeLayout
     * LinearLayout
-    * 
+    * ConstraintLayout
+    * CardView
+      
 - UI Components  
     - TextView
     - EditText
-    - Button
+    - Buttons
+    - Sliders
+      
 - Explicit Intent to open the second Activity
 - FindViewById to retrieve UI components
 - String resource for text concatenation
 
 
 ### TODO
-- Improve app styling
+- Improve app styling and functions
 
 ## Author
 Gabriel Niedermeyer (follow me on [Linkedin](https://www.linkedin.com/in/gabriel-niedermeyer/))
