@@ -1,18 +1,19 @@
-# Calculator_BMI
+# BMI_Calculator
 BMI Calculator was an app I developed to improve my knowledge so far as an Android developer.
 
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/result/image_01.png" width="260">&emsp;<img src="/result/image_02.png" width="260">&emsp;<img src="/result/image_03.png" width="260">;<img src="/result/image_04.png" width="260">;<img src="/result/image_05.png" width="260">
+<img src="/result/image_02.png" width="260">&emsp;<img src="/result/image_01.png" width="260">&emsp;<img src="/result/image_03.png" width="260">
 
-## Tecnologias
+## Technologies
 * Kotlin
 * Activity for screen host
 * ViewGroup
     * RelativeLayout
     * LinearLayout
-- Components de UI
+    * 
+- UI Components  
     - TextView
     - EditText
     - Button
